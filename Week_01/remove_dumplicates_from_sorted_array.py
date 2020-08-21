@@ -1,4 +1,6 @@
 class Solution(object):
+    # Time complexity: O(n)
+    # Space complexity: O(1)
     def removeDuplicates(self, nums):
         """
         :type nums: List[int]
@@ -7,6 +9,6 @@ class Solution(object):
         j = 0
         for i in range(len(nums)):
             if nums[i] != nums[j]:
-                nums[j+1] = nums[i]
                 j += 1
+                nums[j] = nums[i]
         return j + 1
