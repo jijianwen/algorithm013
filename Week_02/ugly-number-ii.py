@@ -1,4 +1,6 @@
 class Solution(object):
+    # Time complexity:  O(N)
+    # Space complexity: O(N)
     def nthUglyNumber(self, n):
         """
         :type n: int
